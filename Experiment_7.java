@@ -16,7 +16,7 @@ public class Experiment_7
 		        count++;
 		    }
 		}
-		System.out.println("Number of doubles = "+count);
+		System.out.println("\nNumber of doubles = "+count);
 	}
 }
 
