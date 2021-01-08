@@ -18,7 +18,7 @@ abstract class Shape {
 }
 
 
-class Rectangle extends Shape{
+class Rectangle1 extends Shape{
     void print_area(){
         System.out.println("Area of the Rectangle of length = "+a+" breadth = "+b+" is");
         double area=a*b;
@@ -26,7 +26,7 @@ class Rectangle extends Shape{
     }
 }
 
-class Square extends Shape{
+class Square1 extends Shape{
     void print_area(){
         System.out.println("area of the Square with side "+a+" is");
         double area=a*a; 
@@ -46,9 +46,9 @@ class Circle extends Shape{
 public class Experiment_11
 {
 	public static void main(String[] args) {
-		Rectangle rc = new Rectangle();
+		Rectangle1 rc = new Rectangle1();
 		rc.print_area();
-		Square sq=new Square();
+		Square1 sq=new Square1();
 		sq.print_area();
 		Circle cr=new Circle();
 		cr.print_area();
