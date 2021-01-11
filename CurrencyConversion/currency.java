@@ -2,7 +2,7 @@ package CurrencyConversion;
 import java.util.Scanner;
 
 public class currency {
-    double inr,usd,euro , yen;
+    double inr,usd,euro ,yen;
     Scanner sc = new Scanner(System.in);
 
     public void dollartorupee(){
