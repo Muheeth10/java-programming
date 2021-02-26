@@ -10,7 +10,7 @@ public class Experiment_7
 		for(int i=0;i<1000;i++){
 		    ar1[i]=rn.nextInt(6);
 		    ar2[i]=rn.nextInt(6);
-		    System.out.print("( "+ar1[i]+","+ar2[i]+" )/t");
+		    System.out.print("( "+ar1[i]+","+ar2[i]+" )\n");
 		    if(ar1[i]==ar2[i])
 		        count++;
 		}

@@ -31,8 +31,8 @@ class SavingsAccount{
     }
     
     public double calculateMonthlyInterest(){
-        double monthlyInterest = annualInterestRate/12 ;
-        return savings*monthlyInterest;
+        double monthlyInterest = savings*annualInterestRate/12 ;
+        return savings+monthlyInterest;
     }
 }
 
@@ -40,12 +40,12 @@ public class Experiment_3{
          public static void main(String []args){
              SavingsAccount account1 = new SavingsAccount(2000.00);
              SavingsAccount account2 = new SavingsAccount(3000.00);
-             account1.setAnnualInterestRate(4);
-             account2.setAnnualInterestRate(4);
+             account1.setAnnualInterestRate(0.04);
+             account2.setAnnualInterestRate(0.04);
              System.out.println("Monthly Interest of $2000 with 4% annual rate = "+account1.calculateMonthlyInterest());
              System.out.println("Monthly Interest of $3000 with 4% annual rate = "+account2.calculateMonthlyInterest());
-             account1.setAnnualInterestRate(5);
-             account2.setAnnualInterestRate(5);
+             account1.setAnnualInterestRate(0.05);
+             account2.setAnnualInterestRate(0.05);
              System.out.println("Monthly Interest of $2000 with 5% annual rate = "+account1.calculateMonthlyInterest());
              System.out.println("Monthly Interest of $3000 with 5% annual rate = "+account2.calculateMonthlyInterest());
              
